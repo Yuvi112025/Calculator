@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CODSOFT'S TASK-03</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="top-navigation">
+  <button id="calculator-tab" class="navigation-button active">Calc</button>
+  <button id="history-tab" class="navigation-button">History</button>
+</div>
+
+<div class="app">
+
+  <div id="history-panel" class="panel">
+    <h3><span class="panel-icon">🕐</span> History</h3>
+    <div id="history-list">No calculations yet</div>
+  </div>
+
+  <div id="calculator" class="calculator">
+    <h2 class="title">CODSOFT'S CALCULATOR</h2>
+    <div id="display" class="display">0</div>
+
+    <select id="mode-select">
+      <option value="calc">Calculator</option>
+      <option value="convert">Unit Converter</option>
+      <option value="roots">Find Roots</option>
+    </select>
+
+    <div class="buttons scientific-buttons">
+      <button data-fn="sin">sin</button>
+      <button data-fn="cos">cos</button>
+      <button data-fn="tan">tan</button>
+      <button data-fn="log">log</button>
+    </div>
+
+    <div id="calculator-buttons" class="buttons">
+      <button data-key="AC">AC</button>
+      <button data-key="±">±</button>
+      <button data-key="%">%</button>
+      <button data-key="/">÷</button>
+
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="*">×</button>
+
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="-">−</button>
+
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="+">+</button>
+
+      <button class="wide-button" data-key="0">0</button>
+      <button data-key=".">.</button>
+      <button class="equals" data-key="=">=</button>
+    </div>
+
+    <div id="converter" class="hidden converter-container">
+      <input id="converter-value" placeholder="Enter value" />
+      <select id="converter-type">
+        <option value="weight">Weight</option>
+        <option value="height">Height</option>
+        <option value="distance">Distance</option>
+        <option value="deg2rad">Angle → Radian</option>
+        <option value="rad2deg">Radian → Angle</option>
+        <option value="time1">Hour → Min → Sec</option>
+        <option value="time2">Sec → Min → Hour</option>
+        <option value="trig">Trigonometric Ratio</option>
+      </select>
+      <button id="convert-button" class="convert-button">Convert</button>
+      <div id="converter-result" class="converter-result"></div>
+    </div>
+
+    <div id="roots" class="hidden converter-container">
+      <select id="equation-degree">
+        <option value="1">Linear (ax + b = 0)</option>
+        <option value="2" selected>Quadratic (ax² + bx + c = 0)</option>
+      </select>
+      <input id="coefficient-a" type="number" placeholder="Coefficient a" />
+      <input id="coefficient-b" type="number" placeholder="Coefficient b" />
+      <input id="coefficient-c" type="number" placeholder="Coefficient c" />
+      <button id="find-roots-button" class="convert-button">Find Roots</button>
+      <div id="root-result" class="converter-result"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
