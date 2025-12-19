@@ -1,7 +1,16 @@
 # CODSOFT Calculator
 
 A modern, feature-rich web-based calculator built with HTML, CSS, and JavaScript. This calculator offers multiple functionalities including basic arithmetic, scientific calculations, unit conversions, and equation root finding.
+---
 
+## 👨‍💻 About the Developer
+
+- **Name:** Yuvraj Pandey  
+- **Role:** Web Development Intern  
+- **Internship Organization:** CODSOFT  
+- **Duration:** November 2025 – December 2025  
+
+---
 ## Features
 
 ### 🧮 Basic Calculator
@@ -101,3 +110,4 @@ This project is created as part of CODSOFT's web development tasks.
 ---
 
 **Note**: This calculator uses `eval()` for expression evaluation. While safe for this context, avoid using in production environments with untrusted input.
+
